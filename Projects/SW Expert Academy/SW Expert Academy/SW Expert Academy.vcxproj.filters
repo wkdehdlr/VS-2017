@@ -45,6 +45,12 @@
     <ClCompile Include="2382 미생물 격리.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2383 점심 식사시간.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2383 점심 식사시간(2).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
