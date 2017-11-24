@@ -1,20 +1,29 @@
 #include<cstdio>
 
-int arr[4] = { 0,1,2,3 };
+int new_arr[6];
+int arr[6] = { 1,2,3,4,5,6 };
 int y = 0;
 int main()
 {
-	int mask = 1 << 3;
-	int y = 1;
+	int mask = 1 << 6;
 	for (int i = 0; i < mask; ++i)
 	{
-		for (int j = 0; j < 3; ++j)
+		int cnt = 0;
+		for (int j = 0; j < 6; ++j)
 		{
-			if (i & (1 << j))
+			if(i & (1<<j))
 			{
-				printf("%d", arr[y+j]);
+				new_arr[cnt] = arr[j];
+				cnt++;
 			}
 		}
-		printf("\n");
+		if (cnt <= 3)
+		{
+			for (int k = 0; k < cnt; ++k)
+			{
+				printf("%d", new_arr[k]);
+			}
+			printf("\n");
+		}
 	}
 }
